@@ -1,7 +1,10 @@
 body {
   padding-top: 50px;
+  background-color: black !important;
+  color: pink;
 }
 
 .jumbotron {
-  background:url("../images/bg.jpg") no-repeat;
+  background-image:url("../images/bg.jpg");
+  background-size: cover;
 }
