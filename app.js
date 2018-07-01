@@ -74,7 +74,6 @@ app.post('/contact/send', (req,res) => {
       res.render('contact', {msg: 'Message has been sent.'});
     });
 
-  console.log(output);
 })
 
 // catch 404 and forward to error handler
