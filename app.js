@@ -8,6 +8,7 @@ var bodyParser = require('body-parser');
 
 var indexRouter = require('./routes/index');
 var about = require ('./routes/about');
+var contact = require('./routes/contact');
 
 var app = express();
 
@@ -21,11 +22,13 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-
-
-
 app.use('/', indexRouter);
 app.use('/about',about);
+app.use('/contact', contact);
+
+app.post('/contact/send', (req,res) => {
+  console.log(req.body);
+})
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
