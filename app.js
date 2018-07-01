@@ -55,7 +55,7 @@ app.post('/contact/send', (req,res) => {
     let mailOptions = {
       from: '"Domi" <express@liniuszka.pl>', // sender address
       to: 'express@liniuszka.pl, ' + req.body.email, // list of receivers
-      subject: 'A message from contact form on your website', // Subject line
+      subject: 'A message from contact form on your website: express website', // Subject line
       text: 'Hello world?', // plain text body
       html: output // html body
     };
