@@ -4,11 +4,12 @@ html {
 }
 
 body {
-  padding-top: 50px;
+  padding-top: 60px;
   margin-bottom: 60px; /* Margin bottom by footer height */
 }
 
 .jumbotron {
+  margin-top:-10px;
   background-image:url("../images/bg.jpg");
   background-size: cover;
   color: #e0dede;
