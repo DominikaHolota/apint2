@@ -15,6 +15,10 @@ body {
   color: #e0dede;
 }
 
+.container {
+  margin-top: 10px;
+}
+
 .footer {
   position: absolute;
   bottom: 0;
